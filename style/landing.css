@@ -1,0 +1,80 @@
+/* Background & Theme */
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Message Section */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Carousel (Vertical) */
+.carousel {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Poem Section */
+.poem-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.poem-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Couple Photos */
+.couple-photo {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
