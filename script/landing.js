@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("loveVideo");
 
     if (video) {
+        video.muted = true; // Ensure it's muted
+        video.play().catch(error => console.log("Autoplay prevented:", error));
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -40,3 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(video);
     }
 });
+
