@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Love Story ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Sacramento&family=Parisienne&family=Satisfy&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style\landing.css">
+    <link rel="icon" type="image/png" href="images/heart.png" class="link-icon">
+    <link rel="stylesheet" href="style/landing.css">
 </head>
 <body>
+
+    <!-- Background Hearts Animation -->
+    <div class="hearts"></div>
+
+    <!-- Background Music -->
+    <audio id="loveMusic" autoplay loop>
+        <source src="images\sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
     <!-- Hero Section -->
     <section class="hero d-flex align-items-center">
@@ -15,16 +26,16 @@
             <div class="row">
                 <!-- Left: Image Carousel -->
                 <div class="col-md-6 text-center">
-                    <div id="loveCarousel" class="carousel slide carousel-vertical" data-bs-ride="carousel">
+                    <div id="loveCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/moment1.jpg" class="d-block w-100" alt="Fun Moment 1">
+                                <img src="images/1.png" class="d-block w-100" alt="Fun Moment 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/moment2.jpg" class="d-block w-100" alt="Fun Moment 2">
+                                <img src="images/2.png" class="d-block w-100" alt="Fun Moment 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/moment3.jpg" class="d-block w-100" alt="Fun Moment 3">
+                                <img src="images/3.png" class="d-block w-100" alt="Fun Moment 3">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#loveCarousel" data-bs-slide="prev">
@@ -37,65 +48,81 @@
                 </div>
 
                 <!-- Right: Love Message -->
-                <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="col-md-6 d-flex flex-column justify-content-center text-center">
                     <h1>Happy Valentine's Day, My Love! 💖</h1>
                     <p class="tagline">From the first day we met to our most cherished moments, every day with you is magical.✨</p>
+                    
+                    <!-- Call Button -->
+                     <div class="call" style="color: white;">
+                        <h3>Miss Me?</h3>
+                        <a href="tel:8837238364" class="btn btn-danger mt-3 call-button">📞 Call Me</a>  
+                     </div>
+
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Body Section -->
-    <section class="body-content">
-        <div class="container">
-            <div class="row">
-                <!-- Left: Valentine's Day Poem -->
-                <div class="col-md-6 text-center poem-section">
-                    <h2>My Love Poem for You 💕</h2>
-                    <p>
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.*
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.* 
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.* 
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.* 
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.* 
-                        *Under the moonlight, hand in hand,*  
-                        *Our hearts whispered, love unplanned.*  
-                        *From the moment we met, I just knew,*  
-                        *Forever, my heart belongs to you.*   
+    <!-- Romantic Video Section -->
+    <section class="video-section text-center">
+        <div class="translucent-box">
+            <div class="row align-items-center">
+                <!-- Left: Poem -->
+                <div class="col-md-6">
+                    <h3>For You, My Love ❤️</h3>
+                    <p class="poem">
+                        From the moment our eyes first met,
+                        A spark ignited, a fate was set.
+                        Like stars that dance in the midnight blue,
+                        My heart found home, my heart found you.
+                        <br><br>
+                        Your laughter sings a melody sweet,
+                        A rhythm of love, a tune so deep.
+                        With every whisper, with every touch,
+                        You show me love, you give so much.
+                        <br><br>
+                        Through golden dawns and moonlit skies,
+                        I see forever in your eyes.
+                        A love so pure, a bond so true,
+                        My world begins and ends with you.
+                        <br><br>
+                        In stormy nights or skies so bright,
+                        You are my calm, my guiding light.
+                        Hand in hand, through time we'll go,
+                        With love that only seems to grow.
+                        <br><br>
+                        Like flowers bloom in spring’s embrace,
+                        You fill my soul with warmth and grace.
+                        No words can say, no verse convey,
+                        How much I love you, every day.
+                        <br><br>
+                        So on this day, my heart is yours,
+                        A love unbreakable, forever endures.
+                        Through all of time, come what may,
+                        You're my Valentine—forever, always. ❤️ 
                     </p>
                 </div>
-
-                <!-- Right: Couple Photoshoot -->
-                <div class="col-md-6 text-center">
-                    <h2>Our Couple Photoshoot 📷</h2>
-                    <img src="images/couple1.jpg" class="img-fluid couple-photo" alt="Couple Photo 1">
-                    <img src="images/couple2.jpg" class="img-fluid couple-photo" alt="Couple Photo 2">
+                <!-- Right: Video -->
+                <div class="col-md-6">
+                    <video width="100%" height="600" autoplay loop muted playsinline>
+                        <source src="images/Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer text-center">
-        <p>"You are my today and all of my tomorrows." 💕</p>
+        <div class="translucent-box">
+            <h3>You are my today and all of my tomorrows 💕</h3>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script\landing.js"></script>
+    <script src="script/landing.js"></script>
 </body>
 </html>
+
