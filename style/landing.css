@@ -53,11 +53,18 @@ h3{
 
 /* Instagram Story Video Aspect Ratio */
 .video-section video {
-    width: 360px;
-    height: 640px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;  /* Makes the video scale with the container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 600px; /* Prevents excessive height on large screens */
+    border-radius: 20px; /* Optional: Adds smooth edges */
 }
+
+@media (max-width: 768px) {
+    .video-section video {
+        max-height: 300px; /* Reduces height for smaller screens */
+    }
+}
+
 
 /* Translucent Box */
 .translucent-box {

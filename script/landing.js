@@ -23,32 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(createHeart, 500); // Create hearts continuously
 });
 
-// From the moment our eyes first met,
-// A spark ignited, a fate was set.
-// Like stars that dance in the midnight blue,
-// My heart found home, my heart found you.
-// <br><br>
-// Your laughter sings a melody sweet,
-// A rhythm of love, a tune so deep.
-// With every whisper, with every touch,
-// You show me love, you give so much.
-// <br><br>
-// Through golden dawns and moonlit skies,
-// I see forever in your eyes.
-// A love so pure, a bond so true,
-// My world begins and ends with you.
-// <br><br>
-// In stormy nights or skies so bright,
-// You are my calm, my guiding light.
-// Hand in hand, through time we'll go,
-// With love that only seems to grow.
-// <br><br>
-// Like flowers bloom in spring’s embrace,
-// You fill my soul with warmth and grace.
-// No words can say, no verse convey,
-// How much I love you, every day.
-// <br><br>
-// So on this day, my heart is yours,
-// A love unbreakable, forever endures.
-// Through all of time, come what may,
-// You're my Valentine—forever, always. ❤️ 
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("loveVideo");
+
+    if (video) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play();  // Play when in view
+                } else {
+                    video.pause(); // Pause when out of view
+                }
+            });
+        }, { threshold: 0.5 }); // Triggers when 50% of the video is visible
+
+        observer.observe(video);
+    }
+});
